@@ -88,3 +88,33 @@ font-size: 24px;
 .contact, xsmall {
 font-size: 12px;
 }
+
+
+#carouselExemple {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+/* Classes pour média queries */
+
+@media all and (max-width: 991px) {
+.stop_md {
+  display: none;
+}
+}
+
+@media all and (max-width: 767px) {
+.stop_sm {
+  display: none;
+}
+}
+@media all and (min-width: 768px) {
+.h1_court{
+  display: none;
+}
+}
