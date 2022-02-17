@@ -38,7 +38,7 @@
     <a class="nav-link" href="https://cccmessigny.wixsite.com/cccmessignyetvantoux/lagility">Agility</a>
     <a class="nav-link" href="https://cccmessigny.wixsite.com/cccmessignyetvantoux/lecoleduchiot">Ecole du chiot</a>
     <a class="nav-link" href="#contact">Contact</a>
-  </nav> --> -->
+  </nav> -->
 
 
  
@@ -85,7 +85,7 @@
           <h2 class="h1 ">CCC <span class="h3 align-bottom">Messigny & Ventoux</span> </h2>
         </div>
         </div>
-      <!-- </div> -->
+  
 </div>
       <div class="row">
         
@@ -102,13 +102,12 @@
 
   
   <!-- ---------------------------------------
-    Element de forme : -->
+   Bloc Trois concours -->
 
   <div class="container iconcontainer">
     <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="iconbox">
-          <!-- <div class="iconbox-icon"></div> -->
+      <div id="concours1" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div  class="iconbox">
           <div class="featureinfo">
             <h4 class="text-center">PASS Agility 2022</h4>
             <p>
@@ -116,11 +115,11 @@
               maitre pour cette sympathique journée.
 
             </p>
-            <a class="btn btn-default btn-sm" onclick="affichDetail('PASS')" role="button">+ d'info »</a>
+            <a id="btnConcours1" class="btn btn-default btn-sm" onclick="affichDetail('PASS')" role="button">+ d'Info »</a>
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <div id="concours2" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="iconbox">
           <!-- <div class="iconbox-icon"></div> -->
           <div class="featureinfo">
@@ -135,9 +134,8 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+      <div id="concours3" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="iconbox">
-          <!-- <div class="iconbox-icon"></div> -->
           <div class="featureinfo">
             <h4 class="text-center">Selectif Grand Prix de France</h4>
             <p>
@@ -151,11 +149,17 @@
 
 
   </div>
-  
-    <div id="PASS" class="container passInvisible mb-3 border">
-      <h2 >PASS Agility 2022 </h2>
+              <!-- ---------------------------------------
+   Bloc detail concours -->
+
+    <div id="PASS" class="container d-none ">
+      <div class="mb-3 border border-5 col_lg-8">
+     <h2 class="d-inline">PASS Agility 2022 </h2>
+          <a class="btn btn-default btn-sm " onclick="closeDetail('PASS')" role="button">X</a>
+          
+
       <div class="row border">
-        <div class="col-2">
+        <div class="col-3">
           <div class="list-group" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action active" id="onglet1" data-toggle="list" href="#o1" role="tab" aria-controls="onglet1">Intervenants</a>
             <a class="list-group-item list-group-item-action" id="onglet2" data-toggle="list" href="#o2" role="tab" aria-controls="onglet2">Planning</a>
@@ -163,7 +167,7 @@
             <a class="list-group-item list-group-item-action" id="onglet4" data-toggle="list" href="#o4" role="tab" aria-controls="onglet4">Accès</a>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-5">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade active show" id="o1" role="tabpanel" aria-labelledby="onglet1"> <h3>Dimanche 1er Mai 2022</h3> Recherche juge desespérément</div>
             <div class="tab-pane fade" id="o2" role="tabpanel" aria-labelledby="onglet2">Contenu du deuxième onglet</div>
@@ -198,11 +202,17 @@
             <div class="tab-pane fade" id="o4" role="tabpanel" aria-labelledby="onglet4">Contenu du quatrième onglet</div>
           </div>
         </div>
-        <div class="col-lg-4 stop_md">
-          <img class="img-thumbnail" src="./images/two-dogs-in-the-tunnel-gd427c2a0b_1920.jpg" max-width : 50% alt="">
-        </div>
+       <img class="img-thumbnail col-lg-4 stop_md" src="./images/two-dogs-in-the-tunnel-gd427c2a0b_1920.jpg" max-width : 50% alt="">
       </div>
+       
+   
+       
+
+      </div>
+
     </div>
+    <!-- ---------------------------------------
+   Fin detail concours -->
   </section>
 
   <!-- ---------------------------------------
