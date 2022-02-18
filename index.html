@@ -115,7 +115,7 @@
               maitre pour cette sympathique journée.
 
             </p>
-            <a id="btnConcours1" class="btn btn-default btn-sm" onclick="affichDetail('PASS')" role="button">+ d'Info »</a>
+            <a id="btnConcours1" class="btn btn-default btn-sm" onclick="affichDetail('detC1', '1', '2')" role="button">+ d'Info »</a>
           </div>
         </div>
       </div>
@@ -152,27 +152,32 @@
               <!-- ---------------------------------------
    Bloc detail concours -->
 
-    <div id="PASS" class="container d-none ">
-      <div class="mb-3 border border-5 col_lg-8">
+    <div id="detC1" class="container d-none ">
+      <div class="mb- border border-5 col_lg-8">
      <h2 class="d-inline">PASS Agility 2022 </h2>
-          <a class="btn btn-default btn-sm " onclick="closeDetail('PASS')" role="button">X</a>
+          <a class="btn btn-default btn-sm " onclick="closeDetail('detC1')" role="button">X</a>
           
 
       <div class="row border">
-        <div class="col-3">
+        <div class="col-md-3">
           <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="onglet1" data-toggle="list" href="#o1" role="tab" aria-controls="onglet1">Intervenants</a>
-            <a class="list-group-item list-group-item-action" id="onglet2" data-toggle="list" href="#o2" role="tab" aria-controls="onglet2">Planning</a>
-            <a class="list-group-item list-group-item-action" id="onglet3" data-toggle="list" href="#o3" role="tab" aria-controls="onglet3">Buvette</a>
-            <a class="list-group-item list-group-item-action" id="onglet4" data-toggle="list" href="#o4" role="tab" aria-controls="onglet4">Accès</a>
+            <a class="list-group-item list-group-item-action" id="onglet1" data-toggle="list" href="#o1" role="tab" aria-controls="onglet1" onclick="ifTable('onglet1')" >onglet1</a>
+            <a class="list-group-item list-group-item-action" id="onglet2" data-toggle="list" href="#o2" role="tab" aria-controls="onglet2" onclick="ifTable('onglet2')" >onglet2</a>
+            <a class="list-group-item list-group-item-action" id="onglet3" data-toggle="list" href="#o3" role="tab" aria-controls="onglet3" onclick="ifTable('onglet3')" >onglet3</a>
+            <a class="list-group-item list-group-item-action" id="onglet4" data-toggle="list" href="#o4" role="tab" aria-controls="onglet4" onclick="ifTable('onglet4')" >onglet4</a>
           </div>
         </div>
-        <div class="col-5">
+        <div class="col-md-5">
           <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade active show" id="o1" role="tabpanel" aria-labelledby="onglet1"> <h3>Dimanche 1er Mai 2022</h3> Recherche juge desespérément</div>
+            <div class="tab-pane fade active show" id="o1" role="tabpanel" aria-labelledby="onglet1">Contenu du premier onglet</div>
             <div class="tab-pane fade" id="o2" role="tabpanel" aria-labelledby="onglet2">Contenu du deuxième onglet</div>
-            <div class="tab-pane fade" id="o3" role="tabpanel" aria-labelledby="onglet3">Bien sûr, un petit café offert à tout participant <br/> Comme chaque année, les consomations sont payables uniquement par jetons. 
-               <table class="table col-md-6">
+            <div class="tab-pane fade" id="o3" role="tabpanel" aria-labelledby="onglet3">Contenu du troisième onglet
+  
+            </div>
+            <div class="tab-pane fade" id="o4" role="tabpanel" aria-labelledby="onglet4">Contenu du quatrième onglet</div>
+          </div>
+        </div>
+        <table id="tableDet" class="table col-md-4 d-none">
         <thead >
           <tr>
             <th></th>
@@ -198,16 +203,8 @@
           </tr>
         </tbody>
       </table>
-            </div>
-            <div class="tab-pane fade" id="o4" role="tabpanel" aria-labelledby="onglet4">Contenu du quatrième onglet</div>
-          </div>
-        </div>
-       <img class="img-thumbnail col-lg-4 stop_md" src="./images/two-dogs-in-the-tunnel-gd427c2a0b_1920.jpg" max-width : 50% alt="">
+       <img id="imgDet" class="img-thumbnail col-md-4 stop_md" src="./images/two-dogs-in-the-tunnel-gd427c2a0b_1920.jpg" max-width : 50% alt="">
       </div>
-       
-   
-       
-
       </div>
 
     </div>
