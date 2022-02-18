@@ -115,7 +115,7 @@
               maitre pour cette sympathique journée.
 
             </p>
-            <a id="btnConcours1" class="btn btn-default btn-sm" onclick="affichDetail('detC1', '1', '2')" role="button">+ d'Info »</a>
+            <a id="btnConcours1" class="btn btn-default btn-sm" onclick="affichDetail('detC1', '2', '3')" role="button">+ d'Info »</a>
           </div>
         </div>
       </div>
@@ -125,14 +125,14 @@
           <div class="featureinfo">
             <h4 class="text-center">Concours 2022</h4>
             <p>
-              samedi 21 et dimanche 22 mai, Dominique Prin nous rejoins pour juger notre concours. Nous le remercions
+              samedi 21 et dimanche 22 mai, Dominique Prin nous rejoints pour juger notre concours. Nous le remercions
               pour sa présence parmis nous.<br />
               <a href="http://www.ceacr-bourgogne.fr/ceact/index.php/agility/parcours/juges/prin-dominique"
                 target="_blank">ses parcours en bourgogne</a>
             </p>
-            <a class="btn btn-default btn-sm" href="#" role="button">Concours »</a>
+            <a id="btnConcours2" class="btn btn-default btn-sm" onclick="affichDetail('detC2', '3', '3')" role="button">+ d'Info »</a>
           </div>
-        </div>
+        </div>  
       </div>
       <div id="concours3" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="iconbox">
@@ -152,10 +152,10 @@
               <!-- ---------------------------------------
    Bloc detail concours -->
 
-    <div id="detC1" class="container d-none ">
+    <div id="ongletsDetail" class="container d-none ">
       <div class="mb- border border-5 col_lg-8">
-     <h2 class="d-inline">PASS Agility 2022 </h2>
-          <a class="btn btn-default btn-sm " onclick="closeDetail('detC1')" role="button">X</a>
+     <h2 id="ongletsDetailH2" class="d-inline">Plus de présisions </h2>
+          <a class="btn btn-default btn-sm " onclick="closeDetail()" role="button">X</a>
           
 
       <div class="row border">
@@ -203,7 +203,7 @@
           </tr>
         </tbody>
       </table>
-       <img id="imgDet" class="img-thumbnail col-md-4 stop_md" src="./images/two-dogs-in-the-tunnel-gd427c2a0b_1920.jpg" max-width : 50% alt="">
+       <img id="imgDet" class="img-thumbnail col-md-4 stop_md" src="./images/two-dogs-in-the-tunnel-gd427c2a0b_1920.jpg" max-width : 50% alt="Sortie de tunnel">
       </div>
       </div>
 
@@ -258,9 +258,9 @@
                     Subject</label>
                   <select id="subject" name="Objet" class="form-control" required="required">
                     <option value="na" selected="">Choisir:</option>
-                    <option value="PASS">Concours</option>
-                    <option value="Concours">agility</option>
-                    <option value="Selectif">Ecole du chiot</option>
+                    <option value="PASS">PASS</option>
+                    <option value="Concours">Concours</option>
+                    <option value="Selectif">Selectif France</option>
                   </select>
                 </div>
               </div>

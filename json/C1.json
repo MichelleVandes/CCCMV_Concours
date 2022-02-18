@@ -1,12 +1,13 @@
 
 {
-"type" :	"PASS",
-"onglet1":"Intervenant",
-"o1":	    "<h2>Dimanche 1er Mai 2022</h2> Recherche juge desespérément",
-"onglet2":	"Planning",
-"o2":	    "7h30 : Accueil <br/> 8h00 : Début des épreuves<br/> 12h30 -> 14h00 : Pause déjeuner<br/> 17h00 : Remise des diplomes",
-"onglet3":	"Buvette",
-"o3":	    "Bien sûr, un petit café offert à tout participant <br/> Comme chaque année, les consomations sont payables uniquement par jetons. ",
-"onglet4":	"Accès",
-"o4":	    "?????"
+  "type": "PASS",
+  "ongletsDetailH2": "PASS Agility 2022",
+  "onglet1": "Intervenant",
+  "o1": "<h2>Dimanche 1er Mai 2022</h2> Recherche juge desespérément",
+  "onglet2": "Planning",
+  "o2": "7h30 : Accueil <br/> 8h00 : Début des épreuves<br/> 12h30 -> 14h00 : Pause déjeuner<br/> 17h00 : Remise des diplomes",
+  "onglet3": "Buvette",
+  "o3": "Bien sûr, un petit café offert à tout participant <br/> Comme chaque année, les consomations sont payables uniquement par jetons. ",
+  "onglet4": "Accès",
+  "o4": "?????"
 }

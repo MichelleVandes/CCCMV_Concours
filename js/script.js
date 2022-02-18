@@ -7,45 +7,48 @@ function affichDetail(typeConcours, tx, ty) {
   btnConcoursX = "btnConcours" + tx;
   btnConcoursY = "btnConcours" + ty;
 
+
   monFic = "./json/" + typeConcours.slice(3) + ".json";
   remplir_zone(monFic);
 
   if (document.getElementById(btnConcours).innerHTML == "+ d'Info »") {
-    maclasse = document.getElementById(typeConcours);
-    maclasse.classList.remove("d-none");
-    maclasse.classList.add("d-block");
+  
+    document.getElementById("ongletsDetail").classList.remove("d-none");
+    document.getElementById("ongletsDetail").classList.add("d-block");
+    razBtn();
     document.getElementById(btnConcours).innerHTML = "- d'Info";
 
     if (screen.width <= 767) {
-      maclasse = document.getElementById("concours2");
-      maclasse.classList.add("d-none");
-      maclasse = document.getElementById("concours3");
-      maclasse.classList.add("d-none");
+     
+      document.getElementById("concours" + tx).classList.add("d-none");
+      document.getElementById("concours" + ty).classList.add("d-none");
     }
   } else {
-    closeDetail(typeConcours);
+    closeDetail();
   }
+  
 }
 
-function closeDetail(typeConcours) {
-  maclasse = document.getElementById(typeConcours);
-  maclasse.classList.remove("d-block");
-  maclasse.classList.add("d-none");
-
-  maclasse = document.getElementById("concours2");
-  maclasse.classList.remove("d-none");
-
-  maclasse = document.getElementById("concours3");
-  maclasse.classList.remove("d-none");
-
+// RAZ Affichage initial
+function closeDetail() { 
+  document.getElementById("ongletsDetail").classList.remove("d-block");
+  document.getElementById("ongletsDetail").classList.add("d-none");
+  document.getElementById("concours2").classList.remove("d-none");
+  document.getElementById("concours3").classList.remove("d-none");
+  razBtn()
+}
+function razBtn() {
   document.getElementById("btnConcours1").innerHTML = "+ d'Info »";
+  document.getElementById("btnConcours2").innerHTML = "+ d'Info »";
 }
 
 // Remplissage des zones de l'écran
 function remplir_zone(monFic) {
   fetch(monFic).then(function (response) {
     response.json().then(function (data) {
-      //alert("top")
+     
+      document.getElementById("ongletsDetailH2").innerHTML =
+         data.ongletsDetailH2;
       document.getElementById("onglet1").innerHTML = data.onglet1;
       document.getElementById("onglet2").innerHTML = data.onglet2;
       document.getElementById("onglet3").innerHTML = data.onglet3;
@@ -61,20 +64,17 @@ function remplir_zone(monFic) {
 // Affichage tarif au lieu de photo
 function ifTable(IdOnglet) {
   if (document.getElementById(IdOnglet).textContent == "Buvette") {
-    maclasse = document.getElementById("tableDet");
-    maclasse.classList.remove("d-none");
-    maclasse.classList.add("d-block");
-    maclasse = document.getElementById("imgDet");
-    maclasse.classList.remove("d-block");
-    maclasse.classList.add("d-none");
+    document.getElementById("tableDet").classList.remove("d-none");
+    document.getElementById("tableDet").classList.add("d-block");
+    document.getElementById("imgDet").classList.remove("d-block");
+    document.getElementById("imgDet").classList.add("d-none");
   } else {
     
-    maclasse = document.getElementById("tableDet");
-    maclasse.classList.remove("d-block");
-    maclasse.classList.add("d-none");
-    maclasse = document.getElementById("imgDet");
-    maclasse.classList.remove("d-none");
-    maclasse.classList.add("d-block");
+    document.getElementById("tableDet").classList.remove("d-block");
+    document.getElementById("tableDet").classList.add("d-none");
+  
+    document.getElementById("imgDet").classList.remove("d-none");
+    document.getElementById("imgDet").classList.add("d-block");
   }
 }
 
