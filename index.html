@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="./css/bootstrap-grid.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <script src="./js/bootstrap.js"></script>
-   <script src="./js/bootstrap.js.map"></script>
+   <!-- <script src="./js/bootstrap.js.map"></script> -->
    <script src="./js/script.js" defer></script>
+   <script type="text/javascript" src="./json/C1.json"></script>
+   <script type="text/javascript" src="./json/C2.json"></script>
 
   <title>CCCMV Concours 2022</title>
 </head>
@@ -32,13 +34,7 @@
 <body>
  <main>
 
-  <!-- <nav class="nav justify-content-end ">
-    <!-- alignement droite -->
-    <!-- <a class="nav-link active" href="https://cccmessigny.wixsite.com/cccmessignyetvantoux/leclub">Le Club</a>
-    <a class="nav-link" href="https://cccmessigny.wixsite.com/cccmessignyetvantoux/lagility">Agility</a>
-    <a class="nav-link" href="https://cccmessigny.wixsite.com/cccmessignyetvantoux/lecoleduchiot">Ecole du chiot</a>
-    <a class="nav-link" href="#contact">Contact</a>
-  </nav> -->
+
 
 
  
@@ -154,8 +150,18 @@
 
     <div id="ongletsDetail" class="container d-none ">
       <div class="mb- border border-5 col_lg-8">
-     <h2 id="ongletsDetailH2" class="d-inline">Plus de présisions </h2>
-          <a class="btn btn-default btn-sm " onclick="closeDetail()" role="button">X</a>
+        <div class="row">
+                  <div class="col-6">
+          <h2 id="ongletsDetailH2">Plus de présisions </h2>
+        </div>
+        <div class="col-5"></div>
+        <div class="col-1">
+            <button class="btn btn-default float-right" onclick="closeDetail()" >X</button>
+        </div>
+        </div>
+
+      
+    
           
 
       <div class="row border">
